@@ -1,0 +1,176 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: "Big Shoulders", sans-serif;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+    color:black;
+}
+
+p,
+li,
+a {
+    font-family: "Open Sans", sans-serif;
+    font-size: 0.85rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color:#666666;
+}
+
+small {
+    font-family: "Open Sans", sans-serif;
+}
+
+img {
+    width: 100%;
+}
+
+.btn {
+    color:#fff;
+    text-transform: uppercase;
+    background-color: #de0039;
+    padding: 0.5rem 2.5rem;
+    text-decoration: none;
+    text-align: center;
+    font-family: "Big Shoulders", sans-serif;
+    font-weight: 400;
+    font-size: 1.2rem;
+    width: 100%;
+    margin: 0.5rem;
+    letter-spacing: 2px;
+}
+
+body {
+    display: grid;
+    grid-template-areas: "header header"
+                         "sidebar main"
+                         "footer footer";
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 0.5fr 6fr 0.5fr;
+    height: 100%;
+    width: 100%;
+}
+
+header {
+    grid-area: header;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.05);
+}
+
+.img-logo {
+    width: 180px;
+}
+
+aside {
+    grid-area: sidebar;
+    padding-top: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-right: 1px solid #ebebeb;
+}
+
+.filtros {
+    list-style: none;
+    margin: 1rem 0;
+}
+
+.filtros h3 {
+    font-size: 1.3rem;
+}
+
+.filtros li {
+    line-height: 1.5rem;
+}
+
+.filtros span {
+    color:#b6b6b6;
+}
+
+main {
+    grid-area: main;
+}
+
+.grid-productos {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    row-gap: 3%;
+    padding: 5%;
+    width: 100%;
+}
+
+.card-producto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #ebebeb;
+    border-radius: 0.8rem;
+    padding: 5%;
+    width: 95%;
+}
+
+.auto {
+    font-size: 1.5rem;
+}
+
+small.detalle {
+    font-size: 0.8rem;
+    color: #000;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+small.bono {
+    color:#de0039;
+    font-weight: 700;
+}
+
+.precios {
+    margin: 0.8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 1px solid #eee;
+    border-top: 1px solid #eee;
+    width: 100%;
+    padding: 0.5rem 0;
+}
+
+.precio {
+    font-size: 2rem;
+    font-weight: 600;
+    font-family: "Big Shoulders", sans-serif;
+}
+
+.precio-lista {
+    text-decoration: line-through;
+}
+
+footer {
+    grid-area: footer;
+    background-color: #3e3e3e;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer p {
+    color:#fff;
+    font-family: "Big Shoulders", sans-serif;
+    font-size: 1.5rem;
+}
+
+
